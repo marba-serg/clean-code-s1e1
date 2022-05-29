@@ -1,4 +1,4 @@
-/* Basic Style */
+/* Basic Style Css */
 .main-page {
   background-color: #f8f8f8;
   color: #333;
@@ -21,9 +21,10 @@
 }
 
 @media (max-width: 768px) {
-  .header
-    { text-align: center;
-}
+
+  .header {
+      text-align: center;
+    }
 
 }
 .main-block {
@@ -32,7 +33,7 @@
   margin: 0 auto 0;
 }
 
-.task {
+.section-add__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1
