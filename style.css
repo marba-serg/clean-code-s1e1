@@ -1,4 +1,5 @@
 /* Basic Style Css */
+
 .main-page {
   background-color: #f8f8f8;
   color: #333;
@@ -27,6 +28,7 @@
     }
 
 }
+
 .main-block {
   display: block;
   width: 500px;
@@ -72,7 +74,7 @@ button:hover {
     color: #3a3A3a;
 }
 
-/* Heading */
+/* Heading block*/
 
 h3,
 label[for="new-task"] {
@@ -85,7 +87,8 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.task-item__input,
+.section-add__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,7 +101,7 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.task-item__input:focus {
   color: #333;
 }
 
@@ -114,30 +117,29 @@ input[type="text"]:focus {
 }
 
 /* Task list */
-li {
+
+.task-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-li > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.task-item__check {
   margin: 0 10px;
 }
-li > label {
+
+.task-item__lable {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li > input[type="text"] {
+.task-item__input {
   width: 226px
 }
 
